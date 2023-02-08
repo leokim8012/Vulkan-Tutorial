@@ -40,7 +40,7 @@ namespace VT{
                 vtDevice,
                 vtWindow.getExtent()};
 
-            std::unique_ptr<VTPipeline> vtPipline;
+            std::unique_ptr<VTPipeline> vtPipeline;
 
 
             VkPipelineLayout pipelineLayout;
