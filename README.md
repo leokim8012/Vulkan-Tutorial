@@ -15,6 +15,6 @@ A video tutorial series introducing computer graphics for [Vulkan®](https://www
 
 ### <a name="Basics"></a> Basics
 
-#### [01 - Opening a window](Vulkan-Tutorial/tutorial01/)
+#### [01 - Opening a window](tutorial01/)
 
 In the very first tutorial of this series we will be creating a class to encapsulate a glfw window, and a class to run our application.
