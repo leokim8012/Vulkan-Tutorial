@@ -5,13 +5,13 @@
 
 namespace VT {
 
-    class VTPipline {
+    class VTPipeline {
         public:
-            VTPipline(const std::string &vertFilepath, const std::string &fragFilepath);
+            VTPipeline(const std::string &vertFilepath, const std::string &fragFilepath);
 
 
         private:
             static std::vector<char> readFile(const std::string &filpath);
-            void createGraphicsPipline(const std::string &vertFilepath, const std::string &fragFilepath);
+            void createGraphicsPipeline(const std::string &vertFilepath, const std::string &fragFilepath);
     };
 }

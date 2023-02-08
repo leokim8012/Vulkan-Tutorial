@@ -1,4 +1,4 @@
-#include "vt_pipline.hpp"
+#include "vt_pipeline.hpp"
 
 #include<fstream>
 #include <stdexcept>
@@ -7,10 +7,10 @@
 
 namespace VT {
 
-    VTPipline::VTPipline(const std::string &vertFilepath, const std::string &fragFilepath) {
-        createGraphicsPipline(vertFilepath, fragFilepath);
+    VTPipeline::VTPipeline(const std::string &vertFilepath, const std::string &fragFilepath) {
+        createGraphicsPipeline(vertFilepath, fragFilepath);
     }
-    std::vector<char> VTPipline::readFile(const std::string& filepath) {
+    std::vector<char> VTPipeline::readFile(const std::string& filepath) {
         std::ifstream file{filepath, std::ios::ate | std::ios::binary};
 
         if(!file.is_open()){
@@ -27,7 +27,7 @@ namespace VT {
 
         return buffer;
     } 
-    void VTPipline::createGraphicsPipline(const std::string &vertFilepath, const std::string &fragFilepath) {
+    void VTPipeline::createGraphicsPipeline(const std::string &vertFilepath, const std::string &fragFilepath) {
         auto vertCode = readFile(vertFilepath);
         auto fragCode = readFile(fragFilepath);
 

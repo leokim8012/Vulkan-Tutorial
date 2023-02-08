@@ -2,11 +2,11 @@
 
 namespace VT {
 
-    VTWindow::VTWindow(int w, int h, std::string name) : width{w}, height{h}, windowName{name} {
+    VTWindow::vtWindow(int w, int h, std::string name) : width{w}, height{h}, windowName{name} {
         initWindow();
     }
 
-    VTWindow::~VTWindow() {
+    VTWindow::~vtWindow() {
         glfwDestroyWindow(window);
         glfwTerminate();
     }

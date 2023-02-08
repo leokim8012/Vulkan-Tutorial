@@ -12,7 +12,7 @@ namespace VT{
             void run();
 
         private:
-            VTWindow VTWindow{
+            vtWindow vtWindow{
                 WIDTH, HEIGHT, "New window"
 
             };

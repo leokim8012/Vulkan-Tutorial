@@ -4,7 +4,7 @@
 namespace VT{
 
     void FirstApp::run(){
-        while(!vTWindow.shouldClose()){
+        while(!vtWindow.shouldClose()){
             glfwPollEvents();
         }
     }

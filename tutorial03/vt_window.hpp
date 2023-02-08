@@ -4,16 +4,17 @@
 
 #include<string>
 namespace VT {
-    class vtWindow
+    class VTWindow
     {
         public:
-            vtWindow(int w, int h, std::string name);
-            ~vtWindow();
+            VTWindow(int w, int h, std::string name);
+            ~VTWindow();
             bool shouldClose() { return glfwWindowShouldClose(window); }
 
-            vtWindow(const vtWindow &) = delete;
-            vtWindow &operator=(const vtWindow &) = delete;
+            void createWindowSurface(VkInstance instance, VkSurfaceKHR *surface);
 
+            VTWindow(const VTWindow &) = delete;
+            VTWindow &operator=(const VTWindow &) = delete;
         private:
             void initWindow();
             const int width;
